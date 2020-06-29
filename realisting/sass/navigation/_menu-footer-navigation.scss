@@ -1,0 +1,62 @@
+/** === Footer menu === */
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 780px) {
+        justify-content: flex-end;
+    }
+}
+
+
+#menu-social-menu {
+
+    a span {
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+
+        font-size: 32px;
+        color: white;
+        margin: 0 0.5rem;
+    }
+
+    a:hover {
+        color: $color__text-blue;
+    }
+
+    a[href*="facebook"]::before {
+        font-family: "Font Awesome 5 Brands";
+        content: "\f082";
+    }
+
+    a[href*="twitter"]::before {
+        font-family: "Font Awesome 5 Brands";
+        content: "\f081";
+    }
+
+    a[href*="instagram"]::before {
+        font-family: "Font Awesome 5 Brands";
+        content: "\f16d";
+    }
+
+   
+}

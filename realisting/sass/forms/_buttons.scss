@@ -1,0 +1,34 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: $color__background-button;
+	color: $color__background-input;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+	border: none;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: $font__heading;
+	font-weight: 400;
+	outline: none;
+	padding: 0.3rem 1rem;
+	text-decoration: none;
+	vertical-align: bottom;
+
+	&:hover {
+		background: $color__background-button-hover;
+		cursor: pointer;
+	}
+
+	&:visited {
+		text-decoration: none;
+	}
+
+	&:focus {
+		background: $color__background-button-hover;
+		outline: thin dotted;
+		outline-offset: -4px;
+	}
+}

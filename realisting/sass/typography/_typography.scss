@@ -1,0 +1,49 @@
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__body;
+	font-weight: 400;
+	line-height: $font__line-height-body;
+	text-rendering: optimizeLegibility;
+}
+
+p{
+	margin-top: 0.5rem;
+}
+
+
+
+.site-footer {
+
+	p {
+		color: $color__text-white;
+		margin-top: 0.4rem;
+	}
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+
+		text-align: center;
+
+		@media screen and (min-width: 780px) {
+			text-align: left;
+		}
+	}
+
+}
+
+
+.site-info {
+	margin-top: 1rem;
+}
+
+.col {
+	margin-bottom: 3rem;
+}
+
+
+@import "headings";

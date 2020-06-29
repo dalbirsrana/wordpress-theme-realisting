@@ -1,0 +1,228 @@
+/********************************************************
+Page layout 
+****************************************************** */
+
+
+.page {
+	.entry-content {
+		max-width: 800px;
+		margin: auto;
+	}
+}
+
+
+
+#post-41 {
+	.entry-content{
+		max-width: 100%;
+	}
+}
+
+
+
+
+.page {
+
+	text-align: justify;
+
+	.post-featured-image {
+
+		height: 40vh;
+		width: 100%;
+
+		img {
+			display: block;
+			object-fit: cover;
+			height: 40vh;
+			width: 100%;
+		}
+	}
+}
+
+
+@include media(tablet) {
+
+	.page {
+
+		position: relative;  
+
+		.post-featured-image {
+			height: calc(100% + 4rem);
+			position: absolute;
+			width: 40%;
+			margin-top: -2rem;
+			margin-left: -1rem;
+
+			img {
+				height: 100%;
+			}
+
+		}
+
+		.entry-box {
+			margin-left: 40%;
+            padding-left: 2rem;
+        }
+
+
+	}
+}
+
+
+
+/********************************************************
+CONTACT US
+****************************************************** */
+
+.wpcf7-not-valid-tip {
+    font-size: 75%;   
+}
+
+.wpcf7 {
+
+    span.wpcf7-not-valid-tip {
+        font-size: 75%;
+        position: absolute;
+        right: 0;
+        padding: 0 0.4rem;
+        background-color: $color__background-light;
+        border-bottom: 2px solid $color__text-red;
+    }
+    
+    input[type="text"],
+    input[type="email"] {        
+        &.wpcf7-not-valid {
+            border-left: 3px solid #db0000;
+            // border-right: 3px solid #db0000;
+            }
+        }
+
+    textarea {
+        height: 100px;
+    }
+
+    div.wpcf7-response-output {
+        font-size: 80%;
+        background-color: $color__background-light;
+        border-radius: 4px 4px 0 0;
+        margin: 0;
+        padding: 0.2rem 0.4rem;
+    }
+
+
+    div.wpcf7-mail-sent-ok {
+        color: $color__text-blue;
+        border: none;
+        border: 2px solid $color__text-blue;
+    }
+    
+    div.wpcf7-mail-sent-ng,
+    div.wpcf7-aborted {
+        color: $color__text-red;
+        border: none;
+        border-bottom: 2px solid $color__text-red;
+    }
+    
+    div.wpcf7-spam-blocked {
+        color: $color__text-red;
+        border: none;
+        border-bottom: 2px solid $color__text-red;
+    }
+    
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing {
+        color: $color__text-red;
+        border: none;
+        border-bottom: 2px solid $color__text-red;
+    }
+
+}
+
+
+
+/********************************************************
+OUR TEAM PAGE
+****************************************************** */
+
+.team-container {
+	padding-bottom: 4rem;
+
+	display: grid;
+	margin: auto;
+	grid-template-columns: 1fr;
+	justify-content: center;
+    
+    @media only screen and (min-width: 620px) {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	@media only screen and (min-width: 1000px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1rem;
+	}
+	
+
+}
+
+
+.profile-container {
+
+	border: solid 4px lightgray;
+	text-align: center;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	margin-top: 1rem;
+
+	.text-container {
+		background-color: rgb(235, 235, 235);
+		padding: 1rem;
+		height: 250px;
+
+		h3 {
+			font-weight: bold;
+			margin-bottom: 0;
+			color: black;
+			text-align: center;
+		}
+
+		.designation {
+			font-size: 100%;
+		}
+
+		p {
+			font-size: 80%;
+		}
+
+		.designation {
+			margin-top: 0;
+		}
+	}
+
+	.person-image-container {
+		margin-top: 2rem;
+
+		img {
+			max-width: 35%;
+			border-radius: 50%;
+			border: solid 5px lightgray;
+			border-bottom: 5px solid $color__text-blue;
+			padding: 0.3rem;
+		}
+	}
+
+	nav ul {
+		display: flex;
+		flex-wrap: nowrap;
+		list-style-type: none;
+		justify-content: center;
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 1rem;
+
+		li:nth-of-type(n+1){
+			padding-left: 1rem;
+		}
+	}
+
+}

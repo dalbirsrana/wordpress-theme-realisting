@@ -1,0 +1,65 @@
+/*
+Theme Name: Realisting
+Author: Dalbir Singh, Rakesh
+Description: 
+
+Version: 1.0.1
+License: GNU General Public License v2 or later
+Text Domain: 
+Tags: one-column, flexible-header, accessibility-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Normalize
+# Typography
+	## Headings
+# Elements
+# Forms
+	## Buttons
+	## Fields
+# Navigation
+	## Links
+	## Menu-footer
+	## Menu-main
+# Accessibility
+# Layout
+	## Posts and pages
+# Media
+--------------------------------------------------------------*/
+
+@import "variables-site/variables-site";
+
+@import "mixins/mixins";
+
+/* Normalize */
+@import "normalize";
+
+/* Typography */
+@import "typography/typography";
+
+/* Elements */
+@import "elements/elements";
+
+/* Forms */
+@import "forms/forms";
+
+/* Navigation */
+@import "navigation/navigation";
+
+/* Accessibility */
+@import "modules/accessibility";
+
+/* Layout */
+@import "layout/layout";
+
+/* Media */
+@import "media/media";
