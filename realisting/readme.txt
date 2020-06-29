@@ -1,6 +1,6 @@
 === realisting ===
 
-Contributors: Dalbir Singh, Rakesh
+Contributors: Dalbir Singh
 Tags: custom-hero-image, custom-logo, custom-post-type 
 
 License: GNU General Public License v2 or later
